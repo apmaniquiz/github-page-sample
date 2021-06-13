@@ -23,6 +23,6 @@ jobs:
       - name: Run npm install
         run: npm install
       - name: Run the gh-pages build
-        run: gh-pages -d build
+        run: npm run deploy
       - name: Run the build for deployment bundling
         run: npm run build
