@@ -11,8 +11,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "pre-push": {
-    "run": "deploy"
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run deploy"
+    }
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
@@ -46,7 +48,8 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^3.2.0",
-    "pre-push": "^0.1.1"
+    "husky": "^6.0.0"
   }
 }
