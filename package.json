@@ -11,9 +11,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "pre-push": [
-    "deploy"
-  ],
+  "pre-push": {
+    "run": "deploy"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
     "@testing-library/jest-dom": "^4.2.4",
