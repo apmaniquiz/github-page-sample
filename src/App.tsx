@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
-          <p>Test ci/cd via github action, test num 01</p>
+          <p>Test ci/cd via github action, test num 02</p>
           <br/>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
